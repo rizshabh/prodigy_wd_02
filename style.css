@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2; /* Light gray background for smooth feel */
+    color: #333;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.stopwatch-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #5d99ff; /* Soft Blue */
+    font-weight: 600;
+}
+
+#time-display {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #5d99ff; /* Blue line beneath time display */
+    padding-bottom: 10px;
+    min-height: 60px;  /* Ensures that the time display area stays consistent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    margin-bottom: 25px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #5d99ff;  /* Soft Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #4e88e1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    background-color: #3d75b3;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+.laps h2 {
+    color: #4e88e1;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #e6f2ff;  /* Light Blue */
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #c6dff7; /* Slightly darker blue */
+}
+
+.lap-divider {
+    height: 2px;
+    background: #e6e6e6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.lap-list-container {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Very light gray */
+    border: 1px solid #ddd;
+}
